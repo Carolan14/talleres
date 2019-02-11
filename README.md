@@ -1,2 +1,0 @@
-# talleres
-tarea

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Principal</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+
+
+*{margin:0; padding:0;} /* Esto se coloca siempre para que no ocurra un error al editar los margenes del body*/
+
+
+/*para header*/   /* Es opcional, pero para mi es imprescindible, es un menu rápido y efectivo */
+
+header {
+
+	 width:100%; /*por defecto se coloca 100% para que abarque todo el ancho del body*/
+	 overflow:hidden; /* muy importante evita errores al ajustar el header en la página*/
+	 background:#8E44AD; /*color de fondo*/
+	 background-image: url(); /* para colocar una imagen de fondo al header*/
+	 padding:20px; /* largo de header*/
+	 position:fixed; /* no solo esta fixed, también esta absolute, para que NO quede fijo mientras se baja en la página*/
+	 top:0; /* obligatorio evita que el header se mueva de lugar*/
+	 left:0; /* obligatorio ''''''''''''''''''''''''''''''''''''*/
+}
+
+/* el header necesita 2 div con class (para sus elemntos)*/
+
+
+/*por ejemplo el logo*/  /*esto va en el principio del body*/
+header .logo {
+	 padding:20px; /*bordes de todos lados*/
+	 float:left; /*aliniación, también esta a la izquieda:heigth*/
+	 padding-left:100px; /* margen de la derecha*/
+	 font-size:30px; /*tamaño de letra*/
+	 font-weight:bold; /* para grosor de texto, también esta, font-weight*/
+	 font-family:century; /*tipografia de letra*/
+	 color:#ffffff; /*color de letra*/
+
+}
+
+/*para crear un menu de varias opciones se hace con NAV y dentro los SPAN*/ /*esto va despues del logo*/
+
+header nav { /* esa -- a -- es de la etiqueta del link de cada SPAN*/
+
+	 float:right; /* aliniación en este caso a la derecha*/
+	 font-size:15px; /* Tamaño de letra*/
+	 padding-right:200px;
+}
+
+header nav a {  /* esa -- a -- es de la etiqueta del link de cada SPAN*/  /* Ve al body*/
+	 display:inline-block; /* necesario, para que no de error al pasar sobre la opción*/
+	 color:#ffffff; /*color de letra*/
+	 text-decoration:none; /* para que se le quite la raya de LINK a las opciones*/
+     line-height:normal; /* si no lo colocas no pasa nada (creo, no me recuerdo), es sólo por prevenir errores*/
+     font-size:25px; /* tamaño de letra*/
+     padding:20px; /*bordes de todos lados*/
+	 font-family:century; /*tipografia de letra*/
+	 padding-right:15px; /* espacio hacia la izquierda*/
+	 padding-left:15px; /* espacio hacia la derecha*/
+
+	 
+
+}
+
+/*esto es un efecto para las opciones*/
+
+header nav a:hover {  /*color de fondo al pasar el mouse sobre las opciones*/
+	 background:#76D7C4; /*el color*/
+	 border-radius:5px; /* para redonder el borde*/
+	 padding:10px; /* el grosor de hover*/
+
+
+}
+
+
+/*para el body*/
+
+body {
+	 width:100%; /*ancho total de body*/
+	 background:; /*fondo de color*/
+	 background-image:url(bla.gif); /*fondo con imagen*/
+ 	 background-attachment:fixed;  /*para que el fondo quede fijo*/
+ 	 background-repeat:no-repeat; /*para que no se repita el fondo*/
+ 	 background-size:cover; /*para que el fondo de imagen abarque toda la pagina*/
+	 padding-top:180px; /* margen de superior*/
+	 max-width:1000px; /* espacio de la derecha y la izquierda del body*/ /*por ejemplo 1000px*/ 
+	 margin:auto; /* para poder hacer todo lo anterior*/
+	 font-family:century; /* tipografia de letra*/
+	 font-size:30px; /* tamaño de letra*/
+	 text-align:justify; /* alineación de texto*/
+}
+
+
+
+/*para botones*/
+
+
+button { /*todo esto también sirve para los INPUT*/
+
+	 height:60px; /* largo*/
+     width:200px; /*ancho*/
+     background:#8E44AD; /*color de fondo*/
+     color:#ffffff; /*color de letra*/
+     font-family:century; /*tipografia de letra*/
+     font-size:25px; /*tamaño de letra*/
+     border-radius:30px; /*para redondear las esquinas */
+     border:#8E44AD; /*color de borde*/
+     margin-left:px; /*esto creo un espacio en el caso de dos o mas button juntos*/
+}
+
+button:hover { /*efecto al pasar sobre el boton*/
+	background:#76D7C4;
+
+
+}
+
+/*Para editar imagenes*/
+
+img {
+	 width:px; /*ancho*/
+	 height:px; /*largo*/
+}
+
+
+</style>
+</head>
+
+
+	 <body>
+
+	 	<! Debajo del body se coloca el header que contiene un DIV donde está el logo y un NAV donde estan las opciones>
+
+		 <header>
+	     <div class="logo">
+	      Talleres  <!se puede colocar texto o una imagen/logo>
+		 </div>
+
+		 <nav> 
+		 <span></span><a href="principal.html"> Ínicio</a>
+		 <span></span><a href="Taller1.html"> Taller1</a> 
+		 <span></span><a href="Taller2.html"> Taller2</a>
+	     <span></span><a href="Taller3.html"> Taller3</a> 
+		 <span></span><a href="Taller4.html"> Taller4</a> 
+		 </nav>
+         </header>
+
+
+        
+
+	</body>
+</html>
